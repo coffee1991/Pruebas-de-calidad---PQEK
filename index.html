@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pruebas de Calidad - PQEK E-Commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/estilos/style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div class="container">
+      <h1>Pruebas de Calidad del E-Commerce PQEK</h1>
+      <p>Evaluando rendimiento, compatibilidad y experiencia del usuario en nuestra plataforma de calzado</p>
+    </div>
+  </header>
+
+  <!-- INTRODUCCIÓN -->
+  <section id="intro" class="text-center">
+    <div class="container">
+      <h2 class="section-title">Importancia de las Pruebas</h2>
+      <p class="fs-5">
+        En <strong>PQEK</strong>, las pruebas garantizan que el sistema funcione correctamente en distintos dispositivos,
+        navegadores y entornos. Gracias a ellas, aseguramos una experiencia de compra <span class="text-primary fw-semibold">segura, fluida y confiable</span>.
+      </p>
+      <img src="https://cdn-icons-png.flaticon.com/512/5530/5530731.png" width="150" alt="QA" class="mt-4">
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE PREGUNTAS -->
+  <section id="preguntas">
+    <div class="container">
+      <div class="row g-4">
+        <!-- DOMINIO -->
+        <div class="col-md-6 col-lg-6">
+          <div class="card p-4 h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-globe icon"></i>
+              <h4 class="card-title mb-3">¿Cómo verificar si un dominio está bien configurado?</h4>
+              <p>Para garantizar que el dominio <strong>pqek.com</strong> esté correctamente configurado se realizan las siguientes pruebas:</p>
+              <ul class="text-start">
+                <li><b>DNS Lookup:</b> comprobar registros A, CNAME y MX con <a href="https://dnschecker.org" target="_blank">DNS Checker</a>.</li>
+                <li><b>Certificado SSL:</b> verificar conexión HTTPS sin advertencias de seguridad.</li>
+                <li><b>Latencia y tiempo de respuesta:</b> usando herramientas como Pingdom o GTMetrix.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPATIBILIDAD DE NAVEGADORES -->
+        <div class="col-md-6 col-lg-6">
+          <div class="card p-4 h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-window-stack icon"></i>
+              <h4 class="card-title mb-3">¿La aplicación se ve igual en todos los navegadores?</h4>
+              <p>No siempre. Por eso se hacen <b>pruebas de compatibilidad</b> en los principales navegadores:</p>
+              <ul class="text-start">
+                <li>Google Chrome</li>
+                <li>Mozilla Firefox</li>
+                <li>Microsoft Edge</li>
+                <li>Safari</li>
+              </ul>
+              <p>Se revisan diferencias en <code>CSS</code>, <code>JavaScript</code> y renderizado visual.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- VISTA MÓVIL -->
+        <div class="col-md-6 col-lg-6">
+          <div class="card p-4 h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-phone icon"></i>
+              <h4 class="card-title mb-3">¿Cómo se ve una aplicación web en el celular?</h4>
+              <p>Mediante pruebas de <b>diseño responsive</b> y usabilidad móvil:</p>
+              <ul class="text-start">
+                <li>Uso de simuladores en Chrome DevTools y pruebas reales en Android/iOS.</li>
+                <li>Verificación de menús, botones y formularios táctiles.</li>
+                <li>Revisión de carga de imágenes y rendimiento en red móvil.</li>
+              </ul>
+              <img src="https://cdn-icons-png.flaticon.com/512/686/686589.png" width="100" alt="mobile test">
+            </div>
+          </div>
+        </div>
+
+        <!-- ELEMENTOS A PROBAR -->
+        <div class="col-md-6 col-lg-6">
+          <div class="card p-4 h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-clipboard-check icon"></i>
+              <h4 class="card-title mb-3">¿Qué elementos se deben probar?</h4>
+              <p>Los principales componentes del e-commerce PQEK son:</p>
+              <ul class="text-start">
+                <li><b>Inicio de sesión:</b> validación con OAuth o base de datos.</li>
+                <li><b>Catálogo:</b> visualización de productos y tiempos de carga.</li>
+                <li><b>Carrito de compras:</b> añadir, eliminar y modificar artículos.</li>
+                <li><b>Pagos:</b> procesos seguros y retorno correcto de transacciones.</li>
+                <li><b>Base de datos:</b> persistencia de usuarios y pedidos.</li>
+                <li><b>Rendimiento:</b> estrés y carga con herramientas como JMeter.</li>
+              </ul>
+              <img src="https://cdn-icons-png.flaticon.com/512/2886/2886665.png" width="90" alt="testing">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCLUSIONES -->
+  <section id="conclusion" class="text-center">
+    <div class="container">
+      <h2 class="section-title">Conclusiones</h2>
+      <p class="fs-5">
+        Las pruebas garantizan la <span class="text-primary fw-semibold">calidad, seguridad y rendimiento</span> del e-commerce PQEK.
+        Un sistema probado ofrece confianza, evita pérdidas y mejora la experiencia de compra de cada usuario.
+      </p>
+      <img src="https://cdn-icons-png.flaticon.com/512/2957/2957443.png" width="120" alt="QA conclusion" class="mt-3">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 PQEK | Evaluación de Pruebas de Calidad para E-Commerce | Desarrollado por <b>John Alexander Hidalgo</b></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
